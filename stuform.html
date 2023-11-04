@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stuform.css">
+    <title>Student Form</title>
+</head>
+<body>
+    <div class="topbar">
+        <img src="logo.png">
+        <div class="tophead">Central Board Of Secondary Education</div>
+    </div>
+    <form class="main">
+        <div class="head">STUDENT REPORT CARD</div>
+
+        <div>
+            <label class="text">Name :</label>
+            <input type="text" class="inp" id="nam" onkeydown="return /[a-z\ \.]/i.test(event.key)">
+        </div>
+
+        <div>
+            <label class="text">Register No. :</label>
+            <input type="number" class="inp" id="regno" oninput="this.value=this.value.slice(0,this.maxLength)" maxLength="9">
+        </div>
+
+        <div>
+            <label class="text">DOB :</label>
+            <input type="date"class="inp" id="dob">
+        </div>
+
+        <div>
+            <label class="text">Class :</label>
+            <select name="clas"class="inp" id="clas">
+                <option>-Select-</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="text">English :</label>
+            <input type="number" class="inp" id="eng">
+        </div>
+
+        <div>
+            <label class="text">Maths :</label>
+            <input type="number" class="inp" id="math">
+        </div>
+
+        <div>
+            <label class="text">Physics :</label>
+            <input type="number" class="inp" id="phy">
+        </div>
+
+        <div>
+            <label class="text">Chemistry :</label>
+            <input type="number" class="inp" id="chem">
+        </div>
+
+        <div>
+            <label class="text">Computer Science :</label>
+            <input type="number" class="inp" id="cs">
+        </div>
+
+        <div id="invalid"></div>
+
+        <div style="display: flex;justify-content: center;">
+            <button type="button" onclick="sub()">Submit</button>
+            <button type="button" onclick="re()">Reload</button>
+        </div>
+
+    </form>
+
+    <div>
+        <h1 style="text-align:center;" id="res">Result</h1>
+        <div style="display: flex;">
+            <div class="out">Name :</div>
+            <div class="out1" id="nameout"></div>
+        </div>
+
+        <div style="display: flex;">
+            <div class="out">Register No. :</div>
+            <div class="out1" id="regout"></div>
+        </div>
+
+        <div style="display: flex;">
+            <div class="out">DOB :</div>
+            <div class="out1" id="dobout"></div>
+        </div>
+
+        <div style="display: flex;">
+            <div class="out">Class :</div>
+            <div class="out1" id="clasout"></div>
+        </div>
+    </div>
+    
+    <h1 id="tab"></h1>
+    <script src="./stuform.js"></script>
+</body>
+</html>

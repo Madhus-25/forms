@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form style="width: 700px;height: 800px;margin: 0px auto;">
+        
+        <div class="title">
+            <div style="font-size: 35px;">Bug Tracker</div>
+            <div style="font-size: 14px;">Report all bugs!</div>
+        </div>
+
+        <div>
+            <label class="text">Bug Title<span class="imp">*</span></label>
+            <input type="text"class="bug">
+        </div>
+        
+        <div style="display: flex;">
+            <label class="text">Issue Description<span class="imp">*</span></label>
+            <textarea class="area"></textarea>
+        </div>
+        
+        <div>
+            <label class="text">Operating System<span class="imp">*</span></label>
+            <select name="OS" class="inp">
+                <option>-Select-</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+        </div>
+
+        <div style="display: flex;">
+            <label class="text">Browser<span class="imp">*</span></label>
+            <ul style="list-style-type:none;margin-left: 110px;">
+                <li class="rad"><input type="radio" name="Browser">Internet Explorer</li>
+                <li class="rad"><input type="radio" name="Browser">Chrome</li>
+                <li class="rad"><input type="radio" name="Browser">Firefox</li>
+                <li class="rad"><input type="radio" name="Browser">Safari</li>
+                <li class="rad"><input type="radio" name="Browser">Opera</li>
+                <li class="rad"><input type="radio" name="Browser">Other</li>
+                <li class="rad"><input type="text" style="border: 1px solid lightgray;width:150px;height:25px"></li>
+            </ul>
+        </div>
+
+        <div>
+            <label class="text">Assigned To<span class="imp">*</span></label>
+            <select name="Asign"class="inp">
+                <option>-Select-</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="text">Priority<span class="imp">*</span></label>
+            <select name="Priority"class="inp">
+                <option>-Select-</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="text">Screenshot</label>
+            <input type="file"class="ss">
+        </div>
+
+        <div>
+            <label class="text">Status<span class="imp">*</span></label>
+            <select name="Status"class="inp">
+                <option>-Select-</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+        </div>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
